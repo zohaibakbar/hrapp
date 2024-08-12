@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Vacations</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="vacation-container">
+        <a href="dashboard.html">Back</a>
+        <h2>Your Vacations</h2>
+        <div id="vacationList"></div>
+
+        <h3>Apply for Vacation</h3>
+        <form id="vacationForm">
+            <label for="vacationType">Vacation Type:</label>
+            <select id="vacationType" name="vacationType" required>
+                <option value="annual">Annual</option>
+                <option value="sick">Sick</option>
+            </select>
+
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required>
+
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" required>
+
+            <button type="submit">Apply</button>
+        </form>
+
+        <!-- Logout Button -->
+        <button id="logoutButton">Logout</button>
+    </div>
+
+    <script src="js/vacations.js"></script>
+</body>
+</html>
